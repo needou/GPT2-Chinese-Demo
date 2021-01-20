@@ -1,0 +1,1 @@
+python generate.py --length=100 --nsamples=1 --prefix=苹果 --model_path=model/sanwen --model_config=model/sanwen/config.json --save_samples

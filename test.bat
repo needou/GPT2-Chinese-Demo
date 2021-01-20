@@ -1,0 +1,1 @@
+python train.py --model_config=config/model_config.json --tokenized_data_path=data/tokenized/ --tokenizer_path=cache/bert-base-chinese-vocab.txt --pretrained_model=pre-modal/chinese/model.ckpt-100000.data-00000-of-00001 --raw_data_path=data/train.json --epochs=30 --log_step=200 --stride 512 --output_dir=model/biaozhun --device=0 --num_pieces=100 --raw
