@@ -8,6 +8,6 @@ python train.py \
   --stride 512 \
   --output_dir model/ \
   --device 0 \
-  --batch_size 6 \
+  --batch_size 4 \
   --num_pieces 100 \
   --raw
