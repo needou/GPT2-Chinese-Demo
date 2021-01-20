@@ -188,12 +188,7 @@ def main():
                 batch_inputs = torch.tensor(batch_inputs).long().to(device)
 
                 #  forward pass
-                if hasattr(torch.cuda, 'empty_cache'):
-                    torch.cuda.empty_cache()
                 outputs = model.forward(input_ids=batch_inputs, labels=batch_inputs)
-                if hasattr(torch.cuda, 'empty_cache'):
-                    torch.cuda.empty_cache()
-
                 loss, logits = outputs[:2]
 
                 #  get loss
